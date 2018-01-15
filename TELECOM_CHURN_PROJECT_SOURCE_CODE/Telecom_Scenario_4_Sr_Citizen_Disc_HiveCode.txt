@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select customerid,totalcharges , (totalcharges-(0.20 * totalcharges)) as final_bill , 'Yes' as Sr_Discount from telecom_churn_upx where seniorcitizen=1 and dependents='Yes'"| sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Scenario_4_Sr_Citizen_Disc.txt

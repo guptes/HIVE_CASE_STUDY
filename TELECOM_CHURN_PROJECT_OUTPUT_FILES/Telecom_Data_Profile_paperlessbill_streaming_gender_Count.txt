@@ -1,0 +1,13 @@
+paperlessbilling;streamingmovies;gender;total_count
+No;No;Female;511
+No;No internet service;Female;523
+No;Yes;Female;368
+No;No;Male;524
+No;No internet service;Male;557
+No;Yes;Male;389
+Yes;No;Female;859
+Yes;No internet service;Female;224
+Yes;Yes;Female;1003
+Yes;No;Male;891
+Yes;No internet service;Male;222
+Yes;Yes;Male;972

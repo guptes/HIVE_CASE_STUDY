@@ -1,0 +1,13 @@
+internetservice;paymentmethod;_c2
+DSL;Bank transfer (automatic);566
+DSL;Credit card (automatic);594
+DSL;Electronic check;648
+DSL;Mailed check;613
+Fiber optic;Bank transfer (automatic);646
+Fiber optic;Credit card (automatic);597
+Fiber optic;Electronic check;1595
+Fiber optic;Mailed check;258
+No;Bank transfer (automatic);332
+No;Credit card (automatic);331
+No;Electronic check;122
+No;Mailed check;741

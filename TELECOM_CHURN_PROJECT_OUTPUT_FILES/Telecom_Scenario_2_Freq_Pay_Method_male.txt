@@ -1,0 +1,2 @@
+paymentmethod;top_freq_payment_male
+Electronic check;1195

@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select  paperlessbilling,streamingmovies,gender, count(*) as total_count from telecom_churn_upx group by paperlessbilling,gender,streamingmovies;" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Data_Profile_paperlessbill_streaming_gender_Count.txt

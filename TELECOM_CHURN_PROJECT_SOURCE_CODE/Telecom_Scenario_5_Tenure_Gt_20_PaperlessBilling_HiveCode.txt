@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select customerid,tenure from telecom_churn_upx where tenure > 20  and paperlessbilling='Yes'"| sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Scenario_5_Tenure_Gt_20_PaperlessBilling.txt

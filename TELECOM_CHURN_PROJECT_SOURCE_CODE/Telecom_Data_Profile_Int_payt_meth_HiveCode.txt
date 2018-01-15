@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select internetservice,paymentmethod,count(*) from telecom_churn_upx group by internetservice,paymentmethod;" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Data_Profile_Internet_payment_method_Count.txt

@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select seniorcitizen,dependents,count(*) as Total_Count from telecom_churn_upx group by seniorcitizen,dependents;" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Data_Profile_Sr_Citizen_Dependent_Count.txt

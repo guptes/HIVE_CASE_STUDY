@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select count(*) as null_total_charge_count from telecom_churn_upx where totalcharges is NULl;" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Data_Profile_Null_Total_Charges.txt

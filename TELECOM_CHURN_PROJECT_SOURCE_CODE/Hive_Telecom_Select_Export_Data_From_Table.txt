@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select * from telecom_churn_upx" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/telecom_churn_upx_data

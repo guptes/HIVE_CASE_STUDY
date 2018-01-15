@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select  paymentmethod,count(*) as top_freq_payment_male from telecom_churn_upx where gender='Male' group by paymentmethod order by top_freq_payment_male desc limit 1;" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Scenario_2_Freq_Pay_Method_male.txt

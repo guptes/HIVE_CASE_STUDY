@@ -1,0 +1,2 @@
+customerid;min_charges
+2967-MXRAV;18.8

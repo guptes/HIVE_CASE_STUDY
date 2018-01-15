@@ -1,0 +1,2 @@
+null_total_charge_count
+11

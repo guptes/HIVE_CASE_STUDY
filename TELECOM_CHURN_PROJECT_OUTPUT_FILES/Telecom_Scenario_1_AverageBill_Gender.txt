@@ -1,0 +1,3 @@
+gender;average_bill
+Female;2283.1909871540843
+Male;2283.407860119869

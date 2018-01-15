@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select internetservice,count(*) as highest_count from telecom_churn_upx group by internetservice order by highest_count desc limit 1"| sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Scenario_6_Pref_Internet_Svc.txt

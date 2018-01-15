@@ -1,0 +1,5 @@
+seniorcitizen;dependents;total_count
+0;No;3882
+0;Yes;2019
+1;No;1051
+1;Yes;91

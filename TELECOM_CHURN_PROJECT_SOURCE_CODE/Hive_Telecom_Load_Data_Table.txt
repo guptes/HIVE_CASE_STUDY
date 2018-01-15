@@ -1,0 +1,1 @@
+hive -e "load data local inpath '/home/cloudera/gupt_files/HIVE/WA_Fn-UseC_-Telco-Customer-Churn.csv' overwrite into table telecom_churn_upx;"

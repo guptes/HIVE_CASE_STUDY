@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select customerid,min(totalcharges) as MIN_CHARGES from telecom_churn_upx where totalcharges is not NULl and internetservice='No' group by customerid order by MIN_CHARGES limit 1" | sed 's/[\t]/;/g' | grep -v "WARN" >  /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Scenario_3_Min_Charge_No_Internet.txt

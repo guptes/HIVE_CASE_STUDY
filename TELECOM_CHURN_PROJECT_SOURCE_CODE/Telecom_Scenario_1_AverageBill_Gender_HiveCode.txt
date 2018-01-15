@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select gender,avg(totalcharges) as average_bill from telecom_churn_upx where totalcharges is not NULl group by gender;" | sed 's/[\t]/;/g' | grep -v "WARN" >  /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Scenario_1_AverageBill_Gender.txt

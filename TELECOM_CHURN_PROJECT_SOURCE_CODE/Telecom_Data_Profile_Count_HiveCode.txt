@@ -1,0 +1,1 @@
+hive -e "set hive.cli.print.header=true;select count(distinct customerid) as distinct_customer_count , count(*) as file_record_count from telecom_churn_upx;" | sed 's/[\t]/;/g' | grep -v "WARN" > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/Telecom_Data_Profile_Count.txt
