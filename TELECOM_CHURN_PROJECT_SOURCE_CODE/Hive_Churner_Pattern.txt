@@ -1,0 +1,5 @@
+hive -e "set hive.cli.print.header=true;select * from telecom_churn_upx where churn='Yes'" | sed 's/[\t]/;/g' | grep -v "WARN"  > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/churners.txt
+
+hive -e "set hive.cli.print.header=true;select contract,count(*) from telecom_churn_upx  where churn='Yes' group by contract;" | sed 's/[\t]/;/g' | grep -v "WARN"  > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/churners_contract.txt
+hive -e "set hive.cli.print.header=true;select tenure,count(*)  from telecom_churn_upx where churn='Yes' group by tenure;" | sed 's/[\t]/;/g' | grep -v "WARN"  > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/churners_tenure.txt
+hive -e "set hive.cli.print.header=true;select internetservice,count(*)  from telecom_churn_gupt where churn='Yes' group by internetservice;" | sed 's/[\t]/;/g' | grep -v "WARN"  > /home/cloudera/gupt_files/HIVE/TELECOM_PROJECT/churners_internetserv.txt
